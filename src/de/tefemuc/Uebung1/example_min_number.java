@@ -17,4 +17,5 @@ public class example_min_number {
             min = n1;
         }
         return min;
-    }}
+    }
+}
