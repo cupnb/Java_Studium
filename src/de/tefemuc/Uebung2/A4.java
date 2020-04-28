@@ -10,8 +10,8 @@ public class A4 {
 
     public static int mySum(int bound){
         int sum = 0;
-        for (int i = 3; i < bound; i++){
-            sum += (i % 2 == 0) ? 0 : i;
+        for (int i = 3; i < bound; i += 2){
+            sum += i;
         }
         return sum;
     }
