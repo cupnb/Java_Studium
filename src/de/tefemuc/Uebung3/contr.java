@@ -1,6 +1,6 @@
 package de.tefemuc.Uebung3;
 
-public class control {
+public class contr {
 
     public static void main(String[] args){
         A6.a();

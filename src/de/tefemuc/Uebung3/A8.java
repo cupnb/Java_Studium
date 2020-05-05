@@ -1,11 +1,10 @@
 package de.tefemuc.Uebung3;
 
 public class A8 {
-    public A8(){ //Sozusagend die main
+    public A8(){ //Sozusagend die main Methode
         double[][] d = myMatrixRandom(4, 5);
         myMatrixPrint(d);
-        d = myMatrixSwap(d, 2, 4);
-        myMatrixPrint(d);
+        myMatrixPrint(myMatrixSwap(d, 2, 4));
     }
 
     private static double[][] myMatrixRandom(int x, int y){
