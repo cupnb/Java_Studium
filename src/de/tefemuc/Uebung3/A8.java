@@ -1,7 +1,7 @@
 package de.tefemuc.Uebung3;
 
 public class A8 {
-    public A8(){ //Sozusagend die main Methode
+    public static void main(String[] args){ //Sozusagend die main Methode
         double[][] d = myMatrixRandom(4, 5);
         myMatrixPrint(d);
         myMatrixPrint(myMatrixSwap(d, 2, 4));
