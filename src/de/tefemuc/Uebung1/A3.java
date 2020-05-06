@@ -1,4 +1,4 @@
-package de.tefemuc.Uebung2;
+package de.tefemuc.Uebung1;
 
 public class A3 {
 

@@ -1,4 +1,4 @@
-package de.tefemuc.Uebung1;
+package de.tefemuc.Uebung0;
 
 public class example_min_number {
     static int b = 6;

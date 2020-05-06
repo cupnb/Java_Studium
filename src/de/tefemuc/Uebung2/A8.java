@@ -1,4 +1,4 @@
-package de.tefemuc.Uebung3;
+package de.tefemuc.Uebung2;
 
 public class A8 {
     public static void main(String[] args){ //Sozusagend die main Methode

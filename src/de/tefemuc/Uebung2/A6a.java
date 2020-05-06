@@ -1,4 +1,4 @@
-package de.tefemuc.Uebung3;
+package de.tefemuc.Uebung2;
 
 import java.util.Random;
 

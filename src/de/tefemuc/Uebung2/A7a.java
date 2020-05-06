@@ -1,4 +1,4 @@
-package de.tefemuc.Uebung3;
+package de.tefemuc.Uebung2;
 
 public class A7a {
     public static void main(String[] args){
