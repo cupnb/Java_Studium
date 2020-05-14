@@ -9,24 +9,9 @@ public class A11d {
 
     public static void main(String[] args){
         Random r = new Random();
-        int n = r.nextInt(10000) + 1;
-        System.out.println(n);
+        int rg = r.nextInt(10000) + 1;
 
-        IntStream s = buildDivStream(n);
-
-        s.forEach(x -> System.out.println(x));
-    }
-
-    private static IntStream buildDivStream(int n){
-        IntStream.Builder b = IntStream.builder();
-        int div = n / 2;
-        while (div != 0){
-            if (n % div == 0){
-                b.accept(div);
-            }
-            div--;
-        }
-
-        return b.build();
-    }
+        IntStream stream = IntStream.rangeClosed(2, rg / 2);
+    		System.out.println(stream.filter(n -> rg % n == 0).count());
+    	}
 }

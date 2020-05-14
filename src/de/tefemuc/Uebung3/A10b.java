@@ -14,11 +14,7 @@ public class A10b {
             list.add(Integer.valueOf(r.nextInt(1001)));
         }
 
-        if (list.size() % 2 == 0){
-            System.out.println("Anzahl der Elemente ist gerade!");
-        } else {
-            System.out.println(list.get((list.size() / 2)).toString());
-        }
+        System.out.println((list.size() % 2 == 0) ? "Anzahl der Elemente ist gerade!" : list.get((list.size() / 2)).toString());
 
         Integer t = Integer.valueOf(500);
         if (list.contains(t)) {

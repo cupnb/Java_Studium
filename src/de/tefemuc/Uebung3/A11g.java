@@ -10,10 +10,7 @@ public class A11g {
         Stream<String> t = Arrays.stream(args);
         Stream.Builder<String> s = Stream.builder();
 
-
-
         t.forEach(n -> s.accept(n.toUpperCase().replaceAll("[0-9]", "")));
-
         t = s.build();
         t
                 .filter(n -> !n.isEmpty()).forEach(n -> System.out.println(n));

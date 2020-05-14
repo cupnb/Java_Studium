@@ -16,11 +16,10 @@ public class A11a {
 
         list.removeIf(n -> (n % 2 != 0));
 
-        list.forEach(n -> print(n));
-    }
-
-    private static void print(int n){
-        if (n > 900) System.out.println(n);
-    }
+        list.forEach(t -> {
+    			if(t.intValue() > 900)
+    				System.out.println(t);
+    		});
+      }
 
 }
