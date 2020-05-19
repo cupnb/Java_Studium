@@ -1,8 +1,8 @@
 package de.tefemuc.Uebung4.A16a;
 
-public class Wohnung extends Immobilie{
+public class A16aWohnung extends A16aImmobilie {
 
-    public Wohnung(int size, int price) throws IllegalPriceException, IllegalSizeException{
+    public A16aWohnung(int size, int price) throws A16aIllegalPriceException, A16aIllegalSizeException {
         super(size, price);
     }
 

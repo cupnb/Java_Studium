@@ -1,24 +1,24 @@
 package de.tefemuc.Uebung4.A16a;
 
-public class ImmoApp {
+public class A16aImmoApp {
 
     public static void main(String[] args){
 
         try {
-            Grundstueck grundstueck = new Grundstueck(1000, 500000);
+            A16aGrundstueck grundstueck = new A16aGrundstueck(1000, 500000);
             System.out.println(grundstueck.calcPricePerSquareMeter());
-        } catch (IllegalSizeException e){
+        } catch (A16aIllegalSizeException e){
             e.printStackTrace();
-        } catch (IllegalPriceException e){
+        } catch (A16aIllegalPriceException e){
             System.err.println(e.getMessage());
         }
 
         try{
-            Wohnung wohnung = new Wohnung(150, 450000);
+            A16aWohnung wohnung = new A16aWohnung(150, 450000);
             System.out.println(wohnung.calcPricePerSquareMeter());
-        } catch (IllegalSizeException e){
+        } catch (A16aIllegalSizeException e){
             e.printStackTrace();
-        } catch (IllegalPriceException e){
+        } catch (A16aIllegalPriceException e){
             System.err.println(e.getMessage());
         }
     }

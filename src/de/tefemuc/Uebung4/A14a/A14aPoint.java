@@ -1,13 +1,13 @@
 package de.tefemuc.Uebung4.A14a;
 
-public class Point {
+public class A14aPoint {
 
 
 
     private int x;
     private int y;
 
-    public Point(int x, int y){
+    public A14aPoint(int x, int y){
         setX(x);
         setY(y);
     }
@@ -41,7 +41,7 @@ public class Point {
     public boolean equals(Object o){
         if (o == null) return false;
         if (o.getClass().equals(this.getClass())) return false;
-        Point a = (Point) o;
+        A14aPoint a = (A14aPoint) o;
         return (a.getX() == this.getX() && a.getY() == this.getY());
     }
 

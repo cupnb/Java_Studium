@@ -3,7 +3,7 @@ package de.tefemuc.Uebung4.A15a;
 /**
  * A simple task with a final description and a priority between 1 and 5
  */
-public class Task {
+public class A15aTask {
 
     private final String description;
     private int priority;
@@ -13,7 +13,7 @@ public class Task {
      * @param description Nonempty string as the description of the task, may not be changed after initialization
      * @param priority int as the priority of the task, will default to nearest allowed priority if outside of allowed interval
      */
-    public Task(String description, int priority){
+    public A15aTask(String description, int priority){
 
         if(description.isEmpty()) throw new IllegalArgumentException("Description is empty");
         this.description = description;
@@ -27,7 +27,7 @@ public class Task {
      * A simple task with a description and priority 1
      * @param description Nonempty string as the description of the task, may not be changed after initialization
      */
-    public Task(String description){
+    public A15aTask(String description){
 
         if(description.isEmpty()) throw new IllegalArgumentException("Description is empty");
         this.description = description;
@@ -71,6 +71,6 @@ public class Task {
         if (o == null) return false;
         if (!o.getClass().equals(this.getClass())) return false;
 
-        return ((Task)o).getDescription().toLowerCase().equals(this.description.toLowerCase());
+        return ((A15aTask)o).getDescription().toLowerCase().equals(this.description.toLowerCase());
     }
 }

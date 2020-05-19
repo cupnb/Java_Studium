@@ -7,14 +7,14 @@ public class A14a {
 
     public static void main(String[] args){
         Random r = new Random();
-        ArrayList<GeometricObject> list = new ArrayList<>();
+        ArrayList<A14aGeometricObject> list = new ArrayList<>();
 
         for (int i = 0; i < 10; i++){
-            list.add(new Circle(new Point(r.nextInt(99) + 1, r.nextInt(99) + 1), (r.nextInt(20) + 1)));
+            list.add(new A14aCircle(new A14aPoint(r.nextInt(99) + 1, r.nextInt(99) + 1), (r.nextInt(20) + 1)));
         }
 
         for (int i = 0; i < 10; i++){
-            list.add(new Rectangle(new Point(r.nextInt(99) + 1, r.nextInt(99) + 1), (r.nextInt(20) + 1), (r.nextInt(20) + 1)));
+            list.add(new A14aRectangle(new A14aPoint(r.nextInt(99) + 1, r.nextInt(99) + 1), (r.nextInt(20) + 1), (r.nextInt(20) + 1)));
         }
 
         list.stream()

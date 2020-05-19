@@ -1,21 +1,21 @@
 package de.tefemuc.Uebung4.A14a;
 
-public abstract class GeometricObject {
+public abstract class A14aGeometricObject {
 
 
-    private Point pos;
+    private A14aPoint pos;
     private static int count;
 
-    protected GeometricObject(Point pos){
+    protected A14aGeometricObject(A14aPoint pos){
         setPos(pos);
-        GeometricObject.count++;
+        A14aGeometricObject.count++;
     }
 
-    public Point getPos() {
+    public A14aPoint getPos() {
         return pos;
     }
 
-    public void setPos(Point pos) {
+    public void setPos(A14aPoint pos) {
         this.pos = pos;
     }
 

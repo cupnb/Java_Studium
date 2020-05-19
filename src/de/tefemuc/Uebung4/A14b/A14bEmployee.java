@@ -1,16 +1,14 @@
 package de.tefemuc.Uebung4.A14b;
 
-import com.sun.jdi.LocalVariable;
-
 import java.time.LocalDate;
 
-public class Employee {
+public class A14bEmployee {
 
     private int id;
     private String name;
     private LocalDate beginOfContract;
 
-    public Employee(int id, String name, LocalDate beginOfContract) throws IllegalInputException{
+    public A14bEmployee(int id, String name, LocalDate beginOfContract) throws A14bIllegalInputException {
         setName(name);
         setId(id);
         setBeginOfContract(beginOfContract);
@@ -20,8 +18,8 @@ public class Employee {
         return (name.length() < 2 || !Character.isUpperCase(name.charAt(0)));
     }
 
-    private void setName(String name) throws IllegalInputException{
-        if (checkName(name)) throw new IllegalInputException("Name is not fitting", name);
+    private void setName(String name) throws A14bIllegalInputException {
+        if (checkName(name)) throw new A14bIllegalInputException("Name is not fitting", name);
         else this.name = name;
     }
 
@@ -54,7 +52,7 @@ public class Employee {
     public boolean equals(Object o){
         if (o == null) return false;
         if (!o.getClass().equals(this.getClass())) return false;
-        Employee e = (Employee) o;
+        A14bEmployee e = (A14bEmployee) o;
         return (e.getId() == this.id);
     }
 

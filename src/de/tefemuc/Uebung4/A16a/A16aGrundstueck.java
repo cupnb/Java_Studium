@@ -1,8 +1,8 @@
 package de.tefemuc.Uebung4.A16a;
 
-public class Grundstueck extends Immobilie{
+public class A16aGrundstueck extends A16aImmobilie {
 
-    public Grundstueck(int size, int price) throws IllegalPriceException, IllegalSizeException{
+    public A16aGrundstueck(int size, int price) throws A16aIllegalPriceException, A16aIllegalSizeException {
         super(size, price);
     }
 

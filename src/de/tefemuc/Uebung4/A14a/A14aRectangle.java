@@ -1,12 +1,12 @@
 package de.tefemuc.Uebung4.A14a;
 
-public class Rectangle extends GeometricObject {
+public class A14aRectangle extends A14aGeometricObject {
 
     private double length;
     private double height;
     private static int count = 0;
 
-    public Rectangle(Point pos, double length, double height){
+    public A14aRectangle(A14aPoint pos, double length, double height){
         super(pos);
         setHeight(height);
         setLength(length);
@@ -42,7 +42,7 @@ public class Rectangle extends GeometricObject {
     public boolean equals(Object o){
         if (o == null) return false;
         if (o.getClass().equals(this.getClass())) return false;
-        Rectangle a = (Rectangle) o;
+        A14aRectangle a = (A14aRectangle) o;
         return (a.getPos().equals(this.getPos()) && a.getHeight() == this.height && a.getLength() == this.length);
     }
 }

@@ -1,8 +1,5 @@
 package de.tefemuc.Uebung4.A14b;
 
-import com.sun.source.tree.Tree;
-
-import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.Random;
@@ -17,13 +14,13 @@ public class A14b {
         }
 
         Random r = new Random();
-        TreeSet<Employee> tree = new TreeSet<>((x, y) -> Integer.compare(x.getId(), y.getId()));
+        TreeSet<A14bEmployee> tree = new TreeSet<>((x, y) -> Integer.compare(x.getId(), y.getId()));
 
         for (int i = 0; i < args.length; i += 2){
-            Employee e;
+            A14bEmployee e;
             try {
-                e = new Employee(1001 + r.nextInt(10), args[i], LocalDate.parse(args[i + 1]));
-            } catch (IllegalInputException ex) {
+                e = new A14bEmployee(1001 + r.nextInt(10), args[i], LocalDate.parse(args[i + 1]));
+            } catch (A14bIllegalInputException ex) {
                 System.err.println(ex.getMessage());
                 return;
             } catch (DateTimeParseException ex){
